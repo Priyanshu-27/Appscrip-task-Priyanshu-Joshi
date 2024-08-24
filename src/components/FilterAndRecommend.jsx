@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../styles/FilterAndRecommend.css";
-import arrow from "../assets/arrow-d.png";
+import leftArrow from "../assets/arrow-left.png"; // Import left arrow image
+import rightArrow from "../assets/arrow-r.png"; // Import right arrow image
+import arrowD from "../assets/arrow-d.png";
 const FilterAndRecommend = () => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
 
@@ -13,12 +15,17 @@ const FilterAndRecommend = () => {
       <div className="filter-section">
         <span className="item-count">3425 ITEMS</span>
         <button onClick={toggleSidebar} className="filter-toggle-button">
+          <img
+            src={isSidebarVisible ? leftArrow : rightArrow}
+            alt={isSidebarVisible ? "Left Arrow" : "Right Arrow"}
+            className="arrow-icon"
+          />
           {isSidebarVisible ? "HIDE FILTER" : "SHOW FILTER"}
         </button>
       </div>
       <div className="recommend-section">
         <span className="recommended-text">RECOMMENDED</span>
-        <img src={arrow} alt="Down Arrow" />
+        <img src={arrowD} alt="Down Arrow" className="recommend-arrow-down" />
       </div>
     </div>
   );

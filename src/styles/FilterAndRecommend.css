@@ -1,0 +1,65 @@
+/* Filter and Recommend Container */
+.filter-recommend-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 20px 0;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 20px;
+}
+
+/* Filter Section */
+.filter-section {
+    display: flex;
+    align-items: center;
+}
+
+.filter-toggle-button {
+    background-color: transparent;
+    border: none;
+    color: #888792;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 10px;
+    margin-right: 0px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+
+.item-count {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 60px;
+    color: #252020;
+}
+
+/* Recommend Section */
+.recommend-section {
+    display: flex;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #000;
+    gap: 5px;
+}
+
+.recommend-icon {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #000;
+}
+
+.recommended-text{
+    color:#252020 ;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+}

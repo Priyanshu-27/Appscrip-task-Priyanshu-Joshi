@@ -1,0 +1,121 @@
+
+/* Top bar styling */
+.top-bar {
+    background-color: #000;
+    color: #EB4C6B;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px,
+        274px,
+        8px,
+        274px;
+}
+
+.text-top-head{
+    color: #EB4C6B;
+    font-family: "Inter",
+        sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+}
+
+/* Main header styling */
+.header {
+    width: 100%;
+    background-color: #fff;
+   
+    border-bottom: 2px solid #eaeaea;
+}
+
+.icons {
+    width: 20px;
+    height: 20px;
+}
+
+.iconsEng{
+   display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    padding-left:15px ;
+    padding-right: 20px;
+    align-items: center;
+}
+
+/* Logo section */
+.logo-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    height: 36px;
+    width: 36px;
+}
+
+/* Navigation links */
+.heading-head {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-left: 140px;
+    /* Adjusts the spacing between logo and heading */
+}
+
+/* Icons section */
+.icons-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons-section a {
+    color: #000;
+    text-decoration: none;
+}
+
+.engText{
+    font-family: "Inter" , sans-serif;
+    font-weight: 700;
+}
+
+.nav-links {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ff4b4b;
+}
+
+.parent-nav-links{
+    padding: 40px;
+}
+
+.nav-name{
+    color: #252020;
+    font-family: "Inter",
+        sans-serif;
+    font-weight: 700;
+}
+
+
+

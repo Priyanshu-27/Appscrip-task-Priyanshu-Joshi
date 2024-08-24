@@ -1,0 +1,28 @@
+/* HeroSection Styles */
+.hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 40px;
+    
+}
+
+.hero-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    line-height: 72px;
+    color: #252020;
+}
+
+.hero-description {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #252020;
+    max-width: 550px;
+    /* text-align: center; */
+    margin: 0 auto;
+    line-height: 1.6;
+}

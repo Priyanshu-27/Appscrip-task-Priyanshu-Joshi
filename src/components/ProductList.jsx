@@ -32,38 +32,46 @@ const ProductList = () => {
   return (
     <div className="product-grid-container">
       <div className="product-grid">
-        {products.map((product) => (
-          <div key={product.id} className="product-card">
-            <img
-              src={product.images[0]}
-              alt={product.title}
-              className="product-image"
-            />
-            <div className="product-details">
-              <h3 className="product-title">{product.title}</h3>
-              <div className="price-heart-container">
-                <p className="pricing-info">
-                  <span
-                    style={{ textDecoration: "underline", cursor: "pointer" }}
-                  >
-                    Sign in
-                  </span>{" "}
-                  or Create an account to see pricing
-                </p>
-                <button
-                  className="heart-button"
-                  onClick={() => toggleLike(product.id)}
-                >
-                  <img
-                    src={likedProducts[product.id] ? pinkHeart : hollowHeart}
-                    alt="Heart"
-                    className="heart-icon"
-                  />
-                </button>
+        {products.map(
+          (product) =>
+            product.images.length > 0 && (
+              <div key={product.id} className="product-card">
+                <img
+                  src={product.images[0]}
+                  alt={product.title}
+                  className="product-image"
+                />
+                <div className="product-details">
+                  <h3 className="product-title">{product.title}</h3>
+                  <div className="price-heart-container">
+                    <p className="pricing-info">
+                      <span
+                        style={{
+                          textDecoration: "underline",
+                          cursor: "pointer",
+                        }}
+                      >
+                        Sign in
+                      </span>{" "}
+                      or Create an account to see pricing
+                    </p>
+                    <button
+                      className="heart-button"
+                      onClick={() => toggleLike(product.id)}
+                    >
+                      <img
+                        src={
+                          likedProducts[product.id] ? pinkHeart : hollowHeart
+                        }
+                        alt="Heart"
+                        className="heart-icon"
+                      />
+                    </button>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
+            )
+        )}
       </div>
     </div>
   );

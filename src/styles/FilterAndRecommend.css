@@ -32,8 +32,6 @@
     text-transform: uppercase;
 }
 
-
-
 .item-count {
     font-family: "Inter", sans-serif;
     font-size: 14px;
@@ -50,23 +48,123 @@
     font-size: 14px;
     color: #000;
     gap: 5px;
+    position: relative;
+    /* Make sure the modal is positioned relative to this container */
 }
 
-.recommend-arrow-down{
+.recommend-arrow-down {
     width: 15px;
     height: 15px;
 }
 
-.recommended-text{
-    color:#252020 ;
+.recommended-text {
+    color: #252020;
     font-weight: 700;
     font-family: "Inter", sans-serif;
+    cursor: pointer;
+    /* Change cursor to pointer */
 }
 
 .arrow-icon {
     margin-right: 5px;
     width: 12px;
-    /* Adjust the size of the arrow */
     height: 12px;
-    /* Adjust the size of the arrow */
+}
+
+/* Modal Styling */
+.recommend-modal {
+    position: absolute;
+    top: 30px;
+    /* Position just below the recommend section */
+    left: 0;
+    
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 200px;
+    /* Adjust the width as needed */
+}
+
+.recommend-modal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.recommend-modal li {
+    padding: 10px;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #252020;
+}
+
+.recommend-modal li:hover {
+    background-color: #f9f9f9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .filter-recommend-container {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 15px 0;
+    }
+
+    .filter-toggle-button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .item-count {
+        font-size: 12px;
+        margin-right: 40px;
+    }
+
+    .recommend-section {
+        font-size: 12px;
+    }
+
+    .recommend-arrow-down {
+        width: 12px;
+        height: 12px;
+    }
+
+    .arrow-icon {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-recommend-container {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px 0;
+    }
+
+    .filter-toggle-button {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .item-count {
+        font-size: 10px;
+        margin-right: 20px;
+    }
+
+    .recommend-section {
+        font-size: 10px;
+    }
+
+    .recommend-arrow-down {
+        width: 10px;
+        height: 10px;
+    }
+
+    .arrow-icon {
+        width: 8px;
+        height: 8px;
+    }
 }

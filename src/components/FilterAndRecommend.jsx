@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import "../styles/FilterAndRecommend.css";
-import leftArrow from "../assets/arrow-left.png"; // Import left arrow image
-import rightArrow from "../assets/arrow-r.png"; // Import right arrow image
+import leftArrow from "../assets/arrow-left.png";
+import rightArrow from "../assets/arrow-r.png";
 import arrowD from "../assets/arrow-d.png";
+
 const FilterAndRecommend = () => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
   const toggleSidebar = () => {
     setIsSidebarVisible(!isSidebarVisible);
+  };
+
+  const toggleModal = () => {
+    setIsModalVisible(!isModalVisible);
   };
 
   return (
@@ -24,8 +30,20 @@ const FilterAndRecommend = () => {
         </button>
       </div>
       <div className="recommend-section">
-        <span className="recommended-text">RECOMMENDED</span>
+        <span className="recommended-text" onClick={toggleModal}>
+          RECOMMENDED
+        </span>
         <img src={arrowD} alt="Down Arrow" className="recommend-arrow-down" />
+        {isModalVisible && (
+          <div className="recommend-modal">
+            <ul>
+              <li>Newest First</li>
+              <li>Popular</li>
+              <li>Price: High to Low</li>
+              <li>Price: Low to High</li>
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );

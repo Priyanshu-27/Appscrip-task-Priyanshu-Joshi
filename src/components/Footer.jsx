@@ -28,7 +28,7 @@ const Footer = () => {
           <p className="contact-no">+44 221 133 5360</p>
           <p className="contact-email">customercare@mettamuse.com</p>
           <h4 className="footer-title">CURRENCY</h4>
-          <p>
+          <p style={{fontFamily:"Inter",}}>
             <img src={usaFlagIcon} alt="USA Flag" className="currency-flag" />{" "}
             USD
           </p>

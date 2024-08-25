@@ -211,16 +211,39 @@ font-size: 12px;
         margin-bottom: 20px;
     }
 
-    .subscribe-form {
-        flex-direction: column;
-    }
+   
+        .subscribe-form {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 5px;
+                margin-bottom: 20px;
+                /* Stacks the input and button vertically */
+                margin-top: 10px;
+            }
+   
 
     .subscribe-form input {
-        margin-bottom: 10px;
-        border-radius: 5px;
+            padding: 10px;
+            /* margin-bottom: 10px; */
+            /* Adds space between input and button */
+            border: 1px solid #333;
+            border-radius: 5px;
+            font-family: "Inter", sans-serif;
+            color: #000;
+            width: 100%;
+            max-width: 650px;
+        /* width: 300px; */
     }
 
     .subscribe-form button {
+        padding: 10px 20px;
+        border: 1px solid #333;
+        background-color: #000000;
+        font-family: "Inter", sans-serif;
+        color: #fff;
         border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
     }
 }

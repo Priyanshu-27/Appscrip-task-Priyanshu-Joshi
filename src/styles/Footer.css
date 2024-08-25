@@ -1,0 +1,226 @@
+/* Footer general styles */
+.footer {
+    background-color:#000;
+    color: #fff;
+    padding: 80px 50px;
+   
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #FFFFFF;
+    flex-wrap: wrap;
+}
+
+
+
+.subscribe-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 30px;
+    /* Aligns items to the start */
+}
+
+.footer-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 18px;
+        font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.footer-title-metta{
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+}
+
+.footer-text{
+        font-family: "Inter", sans-serif;
+        margin-bottom: 20px;
+color: #FFFFFF;
+font-weight: 400;
+font-size: 12px;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+   
+    /* Stacks the input and button vertically */
+    margin-top: 10px;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    /* margin-bottom: 10px; */
+    /* Adds space between input and button */
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    color: #000;
+    width: 300px;
+    /* Makes input full width */
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    border: 1px solid #333;
+    background-color: #000000;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    /* Makes button full width */
+}
+
+.text-sub{
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.contact-section {
+    /* Keeping this as is from the previous version */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 30px;
+
+}
+
+.contact-no{
+    font-weight: 200;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+.contact-email {
+    font-weight: 200;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 10px;
+}
+
+.copyright-text{
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 12px;
+
+    font-family: "Inter", sans-serif;
+}
+
+
+.quick-links{
+    font-family: "Inter", sans-serif;
+    line-height: 40px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.footer-title-metta-muse{
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+
+
+
+
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* flex-direction: column; */
+    margin-right: 20px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+    /* cursor: pointer; */
+}
+
+.footer-column-social{
+    flex: 1;
+    line-height: 50px;
+}
+
+
+
+.social-icons .icon,
+.payment-icons .payment-icon {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.currency-note {
+    font-size: 12px;
+    
+    margin-top: 5px;
+        color: #FFFFFF;
+            font-weight: 200;
+            font-family: "Inter", sans-serif;
+            margin-bottom: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+   
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+
+    .footer-top,
+    .footer-middle {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-form input {
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .subscribe-form button {
+        border-radius: 5px;
+    }
+}

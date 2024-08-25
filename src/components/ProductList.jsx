@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../styles/ProductList.css";
-import axios from "axios";
 import hollowHeart from "../assets/heart.png";
 import pinkHeart from "../assets/heart-p.png";
 
@@ -11,8 +10,11 @@ const ProductList = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("https://fakestoreapi.com/products");
-        setProducts(response.data);
+        const response = await fetch(
+          "https://api.escuelajs.co/api/v1/products"
+        );
+        const data = await response.json();
+        setProducts(data); // Display all products
       } catch (error) {
         console.error("Error fetching products:", error);
       }
@@ -28,19 +30,18 @@ const ProductList = () => {
   };
 
   return (
-    
+    <div className="product-grid-container">
       <div className="product-grid">
         {products.map((product) => (
           <div key={product.id} className="product-card">
             <img
-              src={product.image}
+              src={product.images[0]}
               alt={product.title}
               className="product-image"
             />
             <div className="product-details">
               <h3 className="product-title">{product.title}</h3>
               <div className="price-heart-container">
-                {/* <p className="product-price">${product.price}</p> */}
                 <p className="pricing-info">
                   <span
                     style={{ textDecoration: "underline", cursor: "pointer" }}
@@ -64,7 +65,7 @@ const ProductList = () => {
           </div>
         ))}
       </div>
-   
+    </div>
   );
 };
 
